@@ -1,4 +1,6 @@
-# undefined
+// function to generate markdown for README
+function generateMarkdown(data) {
+    return `# ${data.name}
   ## Table of Contents
   * [Description](#description)
   * [Installation](#installation)
@@ -8,19 +10,23 @@
   * [Tests](#tests)
   * [Questions](#questions)
   ## Description
-  get it right
+  ${data.description}
   ## Installation 
-  undefined
+  ${data.installation}
   ## Usage
-  use it right
+  ${data.usage}
   ## License
-  [![MIT](https://img.shields.io/badge/NPM-MIT-green.svg)](https://opensource.org/licenses/MIT)
+  ${licenseBadge}
   ## Contributing
-  undefined
+  ${data.contributing}
   ## Tests
-  undefined
+  ${data.tests}
   ## Questions 
   ### If you have any questions please contact me at:
-  Email: hello@hello.com
-  Github: https://github.com/undefined
+  Email: ${data.email}
+  Github: https://github.com/${data.github}
+  `
+  ;
+  }
   
+  module.exports = generateMarkdown;

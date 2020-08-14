@@ -3,11 +3,12 @@ const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown.js");
 
 // this asks the user an array of questions 
-const questions = [
+async function userInput () { 
+    return inquirer.prompt([
     {
         type: "input",
-        message: "Title:",
-        name: "What is the title of this Project?"
+        message: "Title of the project?",
+        name: "title"
     },
     {
         type: "input",
@@ -28,7 +29,7 @@ const questions = [
         type: "list",
         message: "License:",
         name: "license",
-        choices: ["MIT", "APACHE 2.0", "BSD"]
+        choices: ["MIT", "APACHE 2.0"]
     },
     {
         type: "input",
@@ -51,27 +52,26 @@ const questions = [
         message: "Email Address:",
         name: "email"
     }
-];
+    
+])
+};
 
-// function to write README file
-function writeToFile(fileName, createFile) {
-    fs.writeFile(fileName, createFile, function (err) {
-        if (err) {
-            console.log(err);
-        }
-        console.log("Your README has been created!");
-    });
-}
+userInput()
+//function for badges 
+.then(function(response) {
+    if(response.license === "MIT"){ licenseBadge = "[![MIT](https://img.shields.io/badge/NPM-MIT-green.svg)](https://opensource.org/licenses/MIT)"}
+    if(response.license === "Apache"){ licenseBadge = "[![Apache](https://img.shields.io/badge/NPM-Apache-green.svg)](https://opensource.org/licenses/Apache-2.0)"}
+    console.log(response)
+    
 
-// function to initialize program
-async function init() {
-    try {
-        const getAnswers = await inquirer.prompt(questions);
-        const fileName = await getAnswers.title.toLowerCase().split(' ').join('') + "_README.md";
-        const createFile = await generateMarkdown(getAnswers);
-        const writefile = await writeToFile(fileName, createFile);
-    } catch (error) {
-        console.log(error);
-    }
-}
-init();
+    //writes to README
+        fs.writeFile("README.md", generateMarkdown(response), "utf8", function (err) {
+
+            if (err) {
+                console.log(err)
+            } else {
+                console.log("Your README was created !")
+            }
+
+        })
+});
