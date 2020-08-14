@@ -16,7 +16,7 @@
   ## Installation 
   Run 'npm install' command in terminal within root directory
   ## Usage
-  run with 'node index.js' in terminal within root directory then follow the prompt questions to create your application's README
+  Run with 'node index.js' in terminal within root directory then follow the prompt questions to create your application's README
   
    <img width="1008" alt="Command line promp questions" src="https://user-images.githubusercontent.com/65522080/90269152-2808a480-de26-11ea-9954-8f685e0e32a8.png">
    
