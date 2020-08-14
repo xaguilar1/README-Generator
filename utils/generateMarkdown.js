@@ -9,6 +9,7 @@ const generateMarkdown = (response) => {
   * [Contributing](#contributing)
   * [Tests](#tests)
   * [Questions](#questions)
+  
   ## Description
   ${response.description}
   ## Installation 
@@ -16,15 +17,16 @@ const generateMarkdown = (response) => {
   ## Usage
   ${response.usage}
   ## License
-  ${licenseBadge}
+  ${response.license}
   ## Contributing
-  ${response.contributing}
+  ${response.contributions}
   ## Tests
   ${response.tests}
   ## Questions 
-  ### If you have any questions please contact me at:
+  ### Got Questions? Contact me here at:
   Email: ${response.email}
-  Github: https://github.com/${response.github}
+
+  Github: https://github.com/${response.username}
   `
   ;
   }

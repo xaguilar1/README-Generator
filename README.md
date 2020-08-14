@@ -7,20 +7,22 @@
   * [Contributing](#contributing)
   * [Tests](#tests)
   * [Questions](#questions)
+  
   ## Description
-  When creating an open source project on GitHub, it is important to have a quality README with information about the app--what is the app for, how to use the app, how to install it, how to report issues, and how to make contributions so that other developers are more likely to use and contribute to the success of the project. A command-line application will allow for quick and easy generation of a project README to get started quickly. This will allow a project creator to spend more time working on finishing the project and less time creating a good README.
+  ajfklsd
   ## Installation 
-  undefined
+  afjskld
   ## Usage
-  using node index.js
+  afjlskd
   ## License
-  [![MIT](https://img.shields.io/badge/NPM-MIT-green.svg)](https://opensource.org/licenses/MIT)
+  APACHE 2.0
   ## Contributing
-  undefined
+  fjalksd
   ## Tests
-  undefined
+  fjakls
   ## Questions 
-  ### If you have any questions please contact me at:
-  Email: xyaguilar77@gmail.com
-  Github: https://github.com/undefined
+  ### Got Questions? Contact me here at:
+  Email: fjaklsd
+
+  Github: https://github.com/fja;klds
   

@@ -18,7 +18,7 @@ async function userInput () {
     {
         type: "input",
         message: "Installation Instructions for Application:",
-        name: "install",
+        name: "installation",
     },
     {
         type: "input",
@@ -33,15 +33,14 @@ async function userInput () {
     },
     {
         type: "input",
-        message: "Test Instructins for Application:",
-        name: "test",
-    },
-    {
-        type: "input",
         message: "Contribution Guidelines for Application:",
         name: "contributions"
     },
-    
+    {
+        type: "input",
+        message: "Test Instructins for Application:",
+        name: "tests",
+    },
     {
         type: "input",
         message: "GitHub Username:",
