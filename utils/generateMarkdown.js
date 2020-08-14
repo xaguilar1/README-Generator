@@ -1,6 +1,6 @@
 // function to generate markdown for README
 const generateMarkdown = (response) => {
-    return `# ${response.name}
+    return `# ${response.title}
   ## Table of Contents
   * [Description](#description)
   * [Installation](#installation)
