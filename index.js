@@ -64,7 +64,7 @@ userInput()
     
 
     //writes to README
-        fs.writeFile("README.md", generateMarkdown(response), "utf8", function (err) {
+        fs.writeFile("README-test.md", generateMarkdown(response), "utf8", function (err) {
 
             if (err) {
                 console.log(err)
