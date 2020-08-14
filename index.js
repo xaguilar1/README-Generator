@@ -58,8 +58,8 @@ async function userInput () {
 userInput()
 //function for badges 
 .then(function(response) {
-    if(response.license === "MIT"){ licenseBadge = "[![MIT](https://img.shields.io/badge/NPM-MIT-green.svg)](https://opensource.org/licenses/MIT)"}
-    if(response.license === "Apache"){ licenseBadge = "[![Apache](https://img.shields.io/badge/NPM-Apache-green.svg)](https://opensource.org/licenses/Apache-2.0)"}
+    if(response.license = "[![MIT](https://img.shields.io/badge/NPM-MIT-green.svg)](https://opensource.org/licenses/MIT)")
+    if(response.license = "[![Apache](https://img.shields.io/badge/NPM-Apache-green.svg)](https://opensource.org/licenses/Apache-2.0)")
     console.log(response)
     
 
