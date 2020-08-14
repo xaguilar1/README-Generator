@@ -29,7 +29,7 @@ async function userInput () {
         type: "list",
         message: "License:",
         name: "license",
-        choices: ["MIT", "APACHE 2.0"]
+        choices: ["MIT", "APACHE"]
     },
     {
         type: "input",
