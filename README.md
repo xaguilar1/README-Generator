@@ -23,7 +23,7 @@
   ## License
   [![Apache](https://img.shields.io/badge/NPM-Apache-green.svg)](https://opensource.org/licenses/Apache-2.0)
   ## Contributing
-  Contributers are welcomed here ! :)
+  Contributers are welcomed here :)
   ## Tests
   N/A for now
   ## Questions 
