@@ -25,7 +25,7 @@
   ## Contributing
   Contributers are welcomed here ! :)
   ## Tests
-  N/A
+  N/A for now
   ## Questions 
   ### Got Questions? Contact me here at:
   Email: xyaguilar77@gmail.com
